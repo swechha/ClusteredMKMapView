@@ -4,7 +4,8 @@ ClusteredMKMapView can be created and initialized just like an MKMapView
 
 e.g. `ClusteredMKMapView *mapView = [[ClusteredMKMapView alloc] initWithFrame:self.view.bounds];`
 
-ClusteredMKMapView uses ClusteredAnnotation objects for showing annotations
+ClusteredMKMapView uses ClusteredAnnotation objects for showing annotations.
+
 Annotations can be initialized and added to map view as:
 
 `ClusteredAnnotation *annotation = [[ClusteredAnnotation alloc] initWithCoordinate:<coordinate> title:@"title"];`
