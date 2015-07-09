@@ -14,6 +14,8 @@
 		D11AD93D1B4E5D14007EDC0F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D11AD93C1B4E5D14007EDC0F /* Images.xcassets */; };
 		D11AD9401B4E5D14007EDC0F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D11AD93E1B4E5D14007EDC0F /* LaunchScreen.xib */; };
 		D11AD94C1B4E5D14007EDC0F /* ClusteredMKMapViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D11AD94B1B4E5D14007EDC0F /* ClusteredMKMapViewTests.m */; };
+		D11AD95B1B4E5D36007EDC0F /* ClusteredAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = D11AD9581B4E5D36007EDC0F /* ClusteredAnnotation.m */; };
+		D11AD95C1B4E5D36007EDC0F /* ClusteredMKMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = D11AD95A1B4E5D36007EDC0F /* ClusteredMKMapView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		D11AD9451B4E5D14007EDC0F /* ClusteredMKMapViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClusteredMKMapViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D11AD94A1B4E5D14007EDC0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D11AD94B1B4E5D14007EDC0F /* ClusteredMKMapViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClusteredMKMapViewTests.m; sourceTree = "<group>"; };
+		D11AD9571B4E5D36007EDC0F /* ClusteredAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusteredAnnotation.h; sourceTree = "<group>"; };
+		D11AD9581B4E5D36007EDC0F /* ClusteredAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusteredAnnotation.m; sourceTree = "<group>"; };
+		D11AD9591B4E5D36007EDC0F /* ClusteredMKMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClusteredMKMapView.h; sourceTree = "<group>"; };
+		D11AD95A1B4E5D36007EDC0F /* ClusteredMKMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClusteredMKMapView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +87,8 @@
 		D11AD92E1B4E5D14007EDC0F /* ClusteredMKMapView */ = {
 			isa = PBXGroup;
 			children = (
-				D11AD9331B4E5D14007EDC0F /* AppDelegate.h */,
-				D11AD9341B4E5D14007EDC0F /* AppDelegate.m */,
-				D11AD9361B4E5D14007EDC0F /* ViewController.h */,
-				D11AD9371B4E5D14007EDC0F /* ViewController.m */,
+				D11AD9561B4E5D27007EDC0F /* ClusteredMapVIew */,
+				D11AD9551B4E5D1F007EDC0F /* SampleApp */,
 				D11AD9391B4E5D14007EDC0F /* Main.storyboard */,
 				D11AD93C1B4E5D14007EDC0F /* Images.xcassets */,
 				D11AD93E1B4E5D14007EDC0F /* LaunchScreen.xib */,
@@ -117,6 +121,28 @@
 				D11AD94A1B4E5D14007EDC0F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D11AD9551B4E5D1F007EDC0F /* SampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				D11AD9331B4E5D14007EDC0F /* AppDelegate.h */,
+				D11AD9341B4E5D14007EDC0F /* AppDelegate.m */,
+				D11AD9361B4E5D14007EDC0F /* ViewController.h */,
+				D11AD9371B4E5D14007EDC0F /* ViewController.m */,
+			);
+			name = SampleApp;
+			sourceTree = "<group>";
+		};
+		D11AD9561B4E5D27007EDC0F /* ClusteredMapVIew */ = {
+			isa = PBXGroup;
+			children = (
+				D11AD9571B4E5D36007EDC0F /* ClusteredAnnotation.h */,
+				D11AD9581B4E5D36007EDC0F /* ClusteredAnnotation.m */,
+				D11AD9591B4E5D36007EDC0F /* ClusteredMKMapView.h */,
+				D11AD95A1B4E5D36007EDC0F /* ClusteredMKMapView.m */,
+			);
+			name = ClusteredMapVIew;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,8 +245,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D11AD95C1B4E5D36007EDC0F /* ClusteredMKMapView.m in Sources */,
 				D11AD9381B4E5D14007EDC0F /* ViewController.m in Sources */,
 				D11AD9351B4E5D14007EDC0F /* AppDelegate.m in Sources */,
+				D11AD95B1B4E5D36007EDC0F /* ClusteredAnnotation.m in Sources */,
 				D11AD9321B4E5D14007EDC0F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
